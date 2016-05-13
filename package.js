@@ -31,7 +31,8 @@ function configurePackage(api) {
   if(api.versionsFrom) {
     api.versionsFrom('METEOR@0.9.0');
   }
-  
+  api.use(['lmieulet:meteor-coverage'], ['client','server']);
+
   api.use(['routepolicy', 'webapp'], 'server');
   api.use(['ejson', 'underscore'], ['client','server']);
 
